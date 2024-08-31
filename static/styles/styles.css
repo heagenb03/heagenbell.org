@@ -1,0 +1,34 @@
+:root {
+    --primary: #008aaa;
+    --secondary: #d1884f;
+    --tertiary: #3bbadb;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-outline-dark {
+    border-color: var(--secondary) !important;
+    color: var(--secondary) !important;
+}
+.btn-outline-dark:hover {
+    background-color: var(--secondary) !important;
+    color: #ffffff !important;
+}
+.nav-link {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--primary) !important;
+}
+.nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+.badge{
+    background-color: var(--secondary) !important;
+}
+
+.progress-bar{
+    background-color: var(--tertiary) !important;
+}
