@@ -53,6 +53,7 @@
             </div>
         </nav>   
 
+        <!--Body-->
         <div class="container main">
             <!--Header-->
             <header class="py-5">
@@ -169,7 +170,7 @@
                 </div>
             </section>
 
-            <!--Contact -->
+            <!--Contact-->
             <section class="py-5">
                 <div class="container px-5">
                     <div class="text-center mb-5">
@@ -185,7 +186,22 @@
                                         <input type="text" class="form-control" id="name"
                                         placeholder="Name" required aria-describedby="nameHelp">
                                         <label for="name" class="text-muted">Name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">Please enter a name</div>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">Please enter your name</div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" style="height: 10rem;" id="email"
+                                        placeholder="Email" required aria-describedby="emailHelp">
+                                        <label for="email" class="text-muted">Email</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">Please enter your emaik</div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea type="text" class="form-control" id="message"
+                                        placeholder="Message" required aria-describedby="messageHelp"></textarea>
+                                        <label for="message" class="text-muted">Message</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">Please enter a message</div>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -194,6 +210,19 @@
                 </div>
             </section>
         </div>
+
+         <!--Footer-->
+         <footer class="bg-light py-4 mt-auto fs-4">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0">
+                            &copy; Heagen Bell 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
