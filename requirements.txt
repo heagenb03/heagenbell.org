@@ -1,0 +1,4 @@
+Flask==2.2.2
+python-dotenv==1.0.0
+resend==0.5.2
+Werkzeug==2.2.2

@@ -8,6 +8,10 @@ a {
     text-decoration: none !important;
 }
 
+.content{
+    padding-top : 30px;
+  }
+
 .btn-outline-dark {
     border-color: var(--secondary) !important;
     color: var(--secondary) !important;
