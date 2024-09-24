@@ -6,21 +6,21 @@
         <meta name="description" content="Heagen Bells Portfolio">
         <meta name="author" content="Heagen Bell">
         <meta name="keywords" content="computer science, portfolio, web devolpment, software devolpment, data structures, algrothims">
-        <title> Heagen Bells Portfolio </title>
+        <title> Heagen Bell's Portfolio </title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
         <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='styles/styles.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="body">
         <!--Navigation Bar-->
         <nav class="navbar navbar-expand-lg shadow">
             <div class="container-fluid mx-5">
-            
+
                 <!--Mobile View-->
                 <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle Navigation">
+                    aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,9 +30,6 @@
 
                     <!--Centered Menu-->
                     <ul class="navbar-nav mx-auto gap-lg-5">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link active" aria-current="page">Home</a>
-                        </li>
                         <li class="nav-item">
                             <a href="#about" class="nav-link active" aria-current="page">About</a>
                         </li>
@@ -44,182 +41,205 @@
                         </li>
                     </ul>
 
-                    <!--Button on the right-->
-                    <form action="#" class="d-flex">
-                        <button class="btn btn-outline-dark px-2 me-sm-3 fs-6 fw-bolder" type="button">
-                            Resume
-                        </button>
-                    </form>
+                    <!--Resume-->
+                    <a href="{{ url_for('static', filename='assets/resume.pdf') }}" class="btn btn-outline-dark px-2 fs-6 fw-bolder" target="_blank">
+                        Resume
+                    </a>
                 </div>
             </div>
         </nav>   
 
         <!--Body-->
-        <div class="container main" id="home">
-            <!--Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row m-0 gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!--Header Text-->
-                            <div class="text center text-xxl-start">
-                                <div class="badge mb-4">
-                                    <div class="text-uppercase">
-                                        XYZ ABC
-                                    </div>
-                                </div>  
-                                <div class="fs-3 fw-light text-muted">
-                                    XYZ ABC
+        <section class="cover">
+            <div class="container main">
+                <!--Header-->
+                <header class="py-5">
+                    <div class="container px-5 pb-5">
+                        <div class="row m-0 gx-5 align-items-center">
+                            <div class="col-xxl-5">
+                                <!--Header Text-->
+                                <div class="text center text-xxl-start">
+                                    <div class="welcome badge mb-4">
+                                        <div class="text-uppercase">
+                                            Welcome
+                                        </div>
+                                    </div>  
+                                    <h1 class="display-3 fw-bolder mb-5">
+                                        <span class="text-gradient d-inline">
+                                            I'm Heagen.
+                                        </span>
+                                    </h1>
+                                    <h1 class="display-3 fw-bolder mb-5">
+                                        <span class="text-gradient d-inline">
+                                            I'm an aspiring
+                                        </span>
+                                    </h1>
+                                    <h1 class="display-3 fw-bolder mb-5">
+                                        <span class="text-gradient-1 d-inline">
+                                            Software Engineer.
+                                        </span>
+                                    </h1>                       
                                 </div>
-                            <h1 class="display-3 fw-bolder mb-5">
-                                <span class="text-gradient d-inline">
-                                    XYZ ABC
-                                </span>
-                            </h1>                   
                             </div>
                         </div>
-                        <div class="col-xxl-7">
-                            <!--Header Pic-->
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <img src="/static/assets/profile-img.jpg" alt="Heagen" loading="lazy"
-                                class="profile-img">
-                            </div>
-                        </div>  
                     </div>
-                </div>
-            </header>
-
-            <!--About-->
-            <section class="big-light py-5">
-                <div class="container px-5" id="about">
+                </header>
+            </div>
+        </section>
+            
+        <!--About-->
+        <section class="cover big-light py-5">
+            <div class="container px-5" id="about">
+                <div class="row m-0 gx-5 justify-content-center">
+                    <div class="col-py-3">
+                        <div class="text-center mx-auto">
+                            <h2 class="display-5 fw-bolder">
+                                <span class="about text-gradient d-inline">About me</span>
+                            </h2>
+                            <p class="about-me lead fw-light mb-4">
+                                Hello, I am Heagen, an undergraduate Computer Science major with a developing foundation in software development, web development, and data science. 
+                                My drive for continous learning as led me to a variety of projects with works involving Python, Java, HTML, CSS, and JavaScript from fields related to 
+                                data science and software development. As an assistant researcher for KU, I’ve been able to grow my skills in problem-solving, critical thinking, and 
+                                related technical skills, which I leverage to contribute to academic and the tech industry. Whether working independently or within a team, 
+                                I am dedicated to applying my technical and communication skills to solve complex challenges and achieve meaningful goals to create a positive impact.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Skills-->
                     <div class="row m-0 gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder">
-                                    <span class="text-gradient d-inline">About me</span>
-                                </h2>
-                                <p class="lead fw-light mb-4">
-                                    XYZ
-                                </p>
-                                <p class="text-muted">
-                                    XYZ
-                                </p>
+                        <div class="col-py-3">
+                            <div class="mb-4">
+                                <h2 class="skills large"> Technical Skills </h2>
+                            </div>
+                            <div>
+                                <small class="medium">Python</small>
+                                <div class="progress mb-3 h-20">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="medium">Java</small>
+                                <div class="progress mb-3 h-20">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="medium">HTML</small>
+                                <div class="progress mb-3 h-20">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="medium">CS</small>
+                                <div class="progress mb-3 h-20">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="medium">JS</small>
+                                <div class="progress mb-3 h-20">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--Skills-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <div class="col-lg-6" id="projects">
-                        <div class="mb-4">
-                            <h2> XYZ </h2>
-                        </div>
-                        <div>
-                            <small>CSS</small>
-                            <div class="progress mb-3 h-20">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        <!--Portfolio-->
+        <section class="cover py-5" id="projects">
+            <div class="container px-5">
+                <div class="text-center mb-4">
+                    <h2 class="display-5 fw-bolder">
+                        <span class="d-inline">Projects</span>
+                    </h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/static/assets/fox-algorithm.jpg" alt="Project" class="card-img" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Visualizing the Fox Algorithm</h5>
+                                <p class="card-text">In collaboration with Dr. Sun at KU, I continue to develop an extendable and animated visualizations of high-performance computing (HPC) 
+                                    algorithms such as the Fox Algorithm using Python and the Manim library. 
+                                    This project aims to make one of many complex mathematical and computational concepts more accessible to students using custom animations and visualizations. 
+                                    By using Manim, I am able to produce engaging, high-quality visualizations that enhanced the understanding of HPC techniques and algorithms among the student body.</p>
+                                <a href="https://github.com/heagenb03/Fox-Algorithm-Visualization" target="_blank" class="btn btn-primary">View</a>
                             </div>
                         </div>
-                        <div>
-                            <small>HTML</small>
-                            <div class="progress mb-3 h-20">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/static/assets/minecraft-modification.jpg" alt="Project" class="card-img" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Minecraft Modification</h5>
+                                <p class="card-text">This is a custom Minecraft mod using Java, JavaScript, and the Forge Modding API to enhance standard gameplay 
+                                    by introducing new interactive blocks, items, mob entities, and data-generated world environments. 
+                                    The mod provides unique and custom gameplay experiences to engage users with fresh content and challenges. 
+                                    By utilizing Java, I integrated new gameplay mechanics, logic, and events, while leveraging JavaScript for compatibility between 
+                                    Minecraft’s core systems and the mod engine (Forge API) and connect the mod to the user interface.</p>
+                                <a href="https://github.com/heagenb03/JncoMod-1.20.X" target="_blank" class="btn btn-primary">View</a>
                             </div>
                         </div>
-                        <div>
-                            <small>JS</small>
-                            <div class="progress mb-3 h-20">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <small>Python</small>
-                            <div class="progress mb-3 h-20">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                    </div
+                </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+        <section class="cover py-5">
+            <div class="container px-5" id="contact">
+                <div class="text-center mb-5">
+                    <h2 class="contact display-5 fw-bolder">
+                        <span class="d-inline">
+                            Contact
+                        </span>
+                    </h2>
+                    <div class="row m-0 justify-content-center">
+                        <div class="col-lg-8">
+                            <form id="contactForm" action="/" method="POST">
+                                <div class="form mb-3">
+                                    <input type="text" class="form-control" id="name"
+                                    placeholder="Name" name="name" required aria-label="nameHelp">
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">Please enter your name</div>
+                                </div>
+                                <div class="form mb-3">
+                                    <input type="email" class="form-control" id="email"
+                                    placeholder="Email" name="email" required aria-label="emailHelp">
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">Please enter your emaik</div>
+                                </div>
+                                <div class="form mb-3">
+                                    <textarea class="form-control" style="height: 10rem;" id="message" name="message"
+                                    placeholder="Message" required aria-label="messageHelp"></textarea>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">Please enter a message</div>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--Portfolio-->
-            <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="text-center mb-4">
-                        <h2 class="display-5 fw-bolder">
-                            <span class="d-inline">Featured Projects</span>
-                        </h2>
-                    </div>
-                    <div class="row m-0 g-3">
-                        <div class="col-lg-4 col-12 mb-3 mb-lg-0">
-                            <div class="card h-100">
-                                <img src="/static/assets/placeholder-img.png" alt="Project" class="card-img" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Contact-->
-            <section class="py-5">
-                <div class="container px-5" id="contact">
-                    <div class="text-center mb-5">
-                        <h2 class="display-5 fw-bolder">
-                            <span class="d-inline">
-                                Contact
-                            </span>
-                        </h2>
-                        <div class="row m-0 justify-content-center">
-                            <div class="col-lg-8">
-                                <form novalidate id="contactForm" action="/contact" method="POST">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="name"
-                                        placeholder="Name" name="name" required aria-label="nameHelp">
-                                        <label for="name" class="text-muted">Name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">Please enter your name</div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="email"
-                                        placeholder="Email" name="email" required aria-label="emailHelp">
-                                        <label for="email" class="text-muted">Email</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">Please enter your emaik</div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" style="height: 10rem;" id="message" name="message"
-                                        placeholder="Message" required aria-label="messageHelp"></textarea>
-                                        <label for="message" class="text-muted">Message</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">Please enter a message</div>
-                                    </div>
-                                    <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-         <!--Footer-->
-         <footer class="bg-light py-4 mt-auto fs-4">
+        <!--Footer-->
+        <footer class="footer py-4 mt-auto fs-4">
             <div class="container px-5">
                 <div class="row m-0 align-items-center justify-content-between flex column flex-sm-row">
-                    <div class="col-auto-sm-10">
-                        <div class="small m-0">
+                    <div class="col-sm-10">
+                        <small class="small">
                             &copy; Heagen Bell 2024
-                        </div>
+                        </small>
                     </div>
-                    <div class="col-auto-sm-1">
-                        <a href="https://www.linkedin.com/in/heagen-bell" aria-label="LinkedIn">
+                    <div class="col-sm-1">
+                        <a href="https://www.linkedin.com/in/heagen-bell" aria-label="LinkedIn" target="_blank">
                             <img src="/static/assets/linkedin-img.png" class="rounded mx-auto d-block"  style="width:50px;height:50px" alt="LinkedIn Picture with hyperlink">
                         </a>
                     </div>
-                    <div class="col-auto-sm-1">
-                        <a href="https://github.com/heagenb03" aria-label="GitHub">
+                    <div class="col-sm-1">
+                        <a href="https://github.com/heagenb03" aria-label="GitHub" target="_blank">
                             <img src="/static/assets/github-img.png" class="rounded mx-auto d-block" style="width:50px;height:50px" alt="GitHub Picture with hyperlink">
                         </a>
                     </div>

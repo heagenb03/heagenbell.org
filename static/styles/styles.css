@@ -1,24 +1,47 @@
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-height {
+       height: 100%; 
+    }
+}
+
+/* General */
 :root {
-    --primary: #008aaa;
-    --secondary: #d1884f;
-    --tertiary: #3bbadb;
+    --primary: #66FCF1;
+    --secondary: #45A29E;
+    --tertiary: #CFC6C7;
+    --quaternary: #1F2833;
+    --quinary: #0B0C10;
+    --senary: #8A95A5;
+    --septenary: #748CAB;
 }
 
 a {
     text-decoration: none !important;
 }
 
-.content{
-    padding-top : 30px;
-  }
+/* Background */
 
-.btn-outline-dark {
-    border-color: var(--secondary) !important;
-    color: var(--secondary) !important;
+.body {
+    background: linear-gradient(-45deg, var(--quaternary), var(--quinary), var(--septenary));
+    background-size: 200% 200%;
+    animation: animate 8s infinite alternate;
+    width: 100%;
+    height: 100%;
 }
-.btn-outline-dark:hover {
-    background-color: var(--secondary) !important;
-    color: #ffffff !important;
+
+/* Navbar */
+
+.navbar {
+    background: transparent !important;
 }
 .nav-link {
     font-size: 16px !important;
@@ -29,10 +52,151 @@ a {
     color: var(--secondary) !important;
 }
 
-.badge{
+.btn-outline-dark {
+    border-color: var(--secondary) !important;
+    color: var(--secondary) !important;
+}
+.btn-outline-dark:hover {
+    background-color: var(--secondary) !important;
+    color: white !important;
+}
+
+/* Welcome Page */
+
+.cover {
+    min-height: 100vh !important;
+}
+
+.py-5 {
+    display: flex !important;
+    height: 100% !important;
+}
+
+.welcome {
+    margin-top: 14% !important;
+}
+
+.text-uppercase {
+    font-size: xx-large !important;
+}
+
+.display-3 {
+    height: 5% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.text-gradient-1 {
+    color: var(--primary) !important;
+}
+
+/* About Page */
+
+.about {
+    font-size: 55px !important;
+}
+
+.about-me {
+    padding-top: 2% !important;
+    padding-bottom: 1% !important;
+    font-size: 22px !important;
+}
+
+/* Skills Page */
+
+.skills {
+    font-size: 45px !important;
+    padding-top: 7% !important;
+}
+
+.medium {
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.text {
+    color: white !important;
+}
+
+.text-center {
+    color: white !important;
+}
+
+.text-gradient {
+    color: white !important;
+}
+
+.text-muted {
+    color: white !important;
+}
+
+.small {
+    color: white !important;
+}
+
+.large {
+    font-size: xx-large !important;
+    color: white !important;
+}
+
+.content {
+    padding-top : 30px;
+}
+
+.badge {
     background-color: var(--secondary) !important;
 }
 
-.progress-bar{
-    background-color: var(--tertiary) !important;
+.progress-bar {
+    background-color: var(--primary) !important;
+}
+
+/* Portfolio Page */
+
+.portfolio {
+    background: transparent !important;
+}
+
+.card {
+    background: transparent!important;
+    height: 10rem !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+    border-radius: 10px !important;
+    border-width: 2px !important;
+}
+
+.btn {
+    background-color: transparent !important;
+    border-color: var(--secondary) !important;
+    color: var(--secondary) !important;
+}
+
+.btn:hover {
+    background-color: var(--secondary) !important;
+    color: white !important;
+}
+
+/* Contact Page */
+
+.contact {
+    padding-top: 10% !important;
+    padding-bottom: 4% !important;
+}
+
+.form-control {
+    margin-top: 1% !important;
+    background: transparent !important;
+    color: white !important;
+    border-color: var(--secondary) !important;
+}
+
+.form-control::placeholder {
+    color: white !important;
+}
+
+/* Footer */
+
+.footer{
+    background: var(--quaternary) !important;
 }
